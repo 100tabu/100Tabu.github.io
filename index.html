@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100Tabu</title>
+  
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Lilita+One&family=Pangolin&display=swap" rel="stylesheet">
+  
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> -->
+  <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+   
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary px-5 fixed-top" style="font-family: 'Pangolin', cursive; font-weight: bolder; font-size: 1.4rem;">
+  <div class="container-fluid w-75">
+    <a class="navbar-brand px-5" href="#" style="color: #8e44ad; font-size: 2rem;">100Tabu</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sobre
+          </a>
+          <ul class="dropdown-menu" style="font-size: 1.4rem;">
+            <li><a class="dropdown-item meu-link" href="#">Visão</a></li>
+            <li><a class="dropdown-item meu-link" href="#">Missão</a></li>
+            <li><a class="dropdown-item meu-link" href="#" data-id="como-surgiu">Como Surgiu</a></li>
+            <li><a class="dropdown-item meu-link" href="#" data-id="como-surgiu">Por que 100Tabu</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Educaçao sexual
+          </a>
+          <ul class="dropdown-menu" style="font-size: 1.4rem;">
+            <li><a class="dropdown-item meu-link" data-id="educacao-sexual" href="#">Importância da educação sexual</a></li>
+            <li><a class="dropdown-item meu-link" data-id="educacao-sexual" href="#">Educação sexual nas escolas</a></li>
+            <li><a class="dropdown-item meu-link" data-id="educacao-sexual" href="#">Educação sexual na adolescência</a></li>
+            <li><a class="dropdown-item meu-link" data-id="educacao-sexual" href="#">Educação sexual na infância</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Outras informações
+          </a>
+          <ul class="dropdown-menu" style="font-size: 1.4rem;">
+            <li><a class="dropdown-item meu-link" href="#" data-id="outras-informacoes">Perguntas frequentes</a></li>
+            <li><a class="dropdown-item meu-link" href="#" data-id="outras-informacoes">Sugestões de mídia</a></li>
+            <li><a class="dropdown-item" href="https://forms.gle/jb2WCAK84jSvD96t8">Deixe sua avaliação!</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div>
+  <section id="carrossel">
+    <div class="textos w-100 mt-sm-5 mt-0">
+      <h1 class="titulo">Mais informações<br />menos estranho </h1>
+      <p>
+        100Tabu Tira o constrangimento de crescer, com informações seguras e divertidas sobre educação sexual fortalecendo relacionamentos saudaveis em todo o mundo.
+      </p>
+    </div>
+    <div class="imagens w-100">
+      <img src="./images/100tabu.png" id="cem_tabu" style="height: 500px;">
+    </div>
+  </section>
+  <div class="footer p-3 d-flex bg-body-tertiary" id="menu-sub"  style="font-family: 'Pangolin', cursive; font-weight: bolder; z-index: 1;">
+    <a href="#" class="btn btn-success rounded-pill text-dark meu-link" data-id="puberdade">
+      <span>
+        Puberdade
+      </span>  
+    </a>
+    <a href="#" class="btn btn-secondary rounded-pill text-dark meu-link" data-id="ist">
+      <span >
+        IST's
+      </span>
+    </a>
+    <a href="#" class="btn btn-warning rounded-pill text-dark meu-link" data-id="relacao-sexual">
+      <span>
+        Relação Sexual
+      </span>
+    </a>
+    <a href="#" class="btn btn-info rounded-pill text-dark meu-link" data-id="contraceptivos">
+      <span>
+        Contraceptivos
+      </span>
+    </a>
+    <a href="#" class="btn btn-danger rounded-pill text-dark">
+      <span>
+        Gravidez
+      </span>
+    </a>
+    <a href="#" class="btn btn-primary rounded-pill text-dark">
+      <span>
+        Segurança Pessoal
+      </span>
+    </a>
+  </div>
+</div>
+
+
+<div class="content m-auto w-75" >
+
+<!-- pagina inicial -->
+<div class="container mt-5" id="sobre">
+  <div class="row">
+    <div class="col-8 mt-2">
+      <div class="titulo">
+        <h1>Visão</h1>
+      </div>
+      <div class="texto">
+        O 1OOTabu idealiza um mundo que reconhece o desenvolvimento sexual de crianças e adolescentes como, natural e saudável. Um mundo em que os jovens são apoiados e afirmados, e os adultos que convivem com eles se comunicam de forma aberta e honesta sobre puberdade, relacionamento, reprodução, sexualidade e sexo. Em tal mundo, os jovens teriam acesso a informações de forma segura e em fontes confiáveis, também teriam o apoio de que precisam para se tornarem adultos sexualmente saudáveis.
+      </div>
+      <div class="titulo mt-4">
+        <h1>Missão</h1>
+      </div>
+      <div class="texto">
+        100Tabu é uma plataforma que aproveita a mídia digital para oferecer uma educação sexual honesta, positiva, segura e adequada para as crianças e adolescentes. O 100Tabu também busca ajudar adultos, como, pais, responsáveis, educadores e profissionais de saúde, a se comunicarem de maneira eficaz e sincera sobre sexo e sexualidade com crianças e adolescentes em suas vidas.
+      </div>
+    </div>
+    <div class="col-4">
+      <img src="./images/a8-removebg-preview.png" alt="" srcset="">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="titulo">
+        <h1>Estrategias</h1>
+      </div>
+      <div class="texto">
+        É aproveitar a experiência de mestres educadores em sexualidade e a contribuição de jovens estudantes da área da saúde, juntamente com o poder da internet para criar e fornecer de forma gratuita informações sobre educação sexual.
+        <ul>
+          <li>Incluindo textos curtos e claros.</li>
+          <li>Imagens e curiosidades sobre determinado tema.</li>
+          <li>Sugestões de Mídia para que o adolescente se sinta cada vez mais a vontade para buscar informação.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row w-100 m-auto" style="background-color: #8e44ad;">
+    <div class="titulo text-center text-white">
+      <h1>Para saber mais</h1>
+    </div>
+</div>
+
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-12 py-5">
+      <div class="texto">
+        Por que a educação sexual honesta e adequada à idade, como 100Tabu, é vital para a saúde e o bem-estar dos jovens?
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <div class="card" style="background-color: #8e44ad; min-height: 450px;">
+        <iframe class="card-img-top" width="560" height="315" src="https://www.youtube.com/embed/sYC1RAeKw7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="card-body">
+          <p class="card-text text-white" style="font-family: 'Arimo', sans-serif;">IMPORTÂNCIA DA EDUCAÇÃO SEXUAL INFÂNTIL (Proteção, Consentimento e Segurança).</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card" style="background-color: #8e44ad; min-height: 450px; ">
+        <iframe class="card-img-top" width="560" height="315" src="https://www.youtube.com/embed/qtKfDolDfPs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="card-body">
+          <p class="card-text text-white" style="font-family: 'Arimo', sans-serif;">Como falar sobre Sexualidade com os seus filhos.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card" style="background-color: #8e44ad; min-height: 450px;">
+        <iframe class="card-img-top" width="560" height="315" src="https://www.youtube.com/embed/e-tBfhSfXdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="card-body">
+          <p class="card-text text-white" style="font-family: 'Arimo', sans-serif;">PUBERDADE: Estágios do desenvolvimento.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row w-100 m-auto" style="background-color: #8e44ad;" id="como-surgiu">
+  <div class="titulo text-center text-white">
+    <h1>Nossa historia</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-8 ">
+      <div class="titulo my-4">
+        <h1>Como surgiu?</h1>
+      </div>
+      <div class="texto">
+        Este projeto foi realizado para a disciplina de Vida e Carreira, ministrada pelo docente Marcelo Callegari, na Universidade Potiguar, localizada em Natal/RN. A ideia seria criar algum projeto que tivesse algum fundo social e que influenciasse de forma positiva a causa. O tema escolhido foi “Educação Sexual e sua importância para o desenvolvimento de crianças e adolescentes”, visando a sua relevância como agregadora para a formação crítica dos indivíduos. A plataforma também se dedica em fornecer informações valiosas baseadas em fatos científicos, incluindo uma variedade de tópicos, que ajudam a aumentar o conhecimento e a compreensão das pessoas que a utilizarão sobre a sexualidade humana.
+        Então optamos por criar um sistema Web, o qual foi desenvolvido de forma que trace uma linguagem clara, atual e acessível para todos os níveis.
+      </div>
+    </div>
+    <div class="col-4">
+      <img src="./images/a9-removebg-preview.png" style="width: 400px; height: 300px;">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="titulo my-4">
+        <h1>Por que 100Tabu?</h1>
+      </div>
+
+      <div class="texto">
+        O nome dado ao projeto, 100tabu, faz referência a forma como queremos passar as informações. Superando os paradigmas que esse tema traz para a nossa sociedade e esclarecer que não se trata apenas de ensinar “sexo” para os jovens, mas sim, de dividir o aprendizado em etapas, de acordo com a faixa etária. Visamos mostrar que o assunto aborda diversos temas importantes como, emoções, consentimento, limites corporais e outras questões que não se restringem às sexuais. Além de que, falar sobre educação sexual, nos permite ensinar as crianças a reconhecer abusos e a denunciar, visto que no nosso país, Brasil, 76,5% dos casos de estrupo infantil acontecem dentro de casa (Beatriz Gatti, 2023).
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="participantes">
+    <!-- <div class="col-4">
+      <div class="titulo my-4">
+        <h1>Equipe (Ediçao e Pesquisa)</h1>
+      </div>
+      <div class="texto">
+        Emmylle kamila da Costa Oliveira</br>
+        Ericka Vanessa Pinheiro da Costa</br>
+        Felicia Paula Moura da silva</br>
+        Júlia Alice da Silva M. Câmara</br>
+        Joycilene Rodrigues Gomes</br>
+        Laísa Lidiane Costa Almeida</br>
+        Rayane Kelly de Sousa</br>
+        Samyra Fernandes Farias</div>
+    </div> -->
+    <div class="col-12">
+
+      <div class="titulo my-4">
+        <h1>Um pouco sobre nós</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="card py-3" style="height: 350px;">
+            <img src="./images/emmyle.jpeg" class="card-img-top rounded-pill m-auto" alt="..." style="object-fit: cover;">
+            <div class="card-boy px-2">
+              <h5 class="card-title text-center mt-3">
+                Emmylle kamila da Costa Oliveira
+              </h5>
+              <div class="card-text mb-3 text-center">
+                Ediçao e pesquisa
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card py-3" style="height: 350px;">
+            <img src="./images/ericka.jpeg" class="card-img-top rounded-pill m-auto" alt="..." style="object-fit: fill;">
+            <div class="card-boy px-2">
+              <h5 class="card-title text-center mt-2">
+                Ericka Vanessa Pinheiro da Costa
+              </h5>
+              <div class="card-text mb-3 text-center">
+                Ediçao e pesquisa
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card py-3" style="height: 350px;">
+            <img src="./images/felicia.jpeg" class="card-img-top rounded-pill m-auto" alt="..." style="object-fit: cover;">
+            <div class="card-boy px-2">
+              <h5 class="card-title text-center mt-2">
+                Felicia Paula Moura da silva
+              </h5>
+              <div class="card-text mb-3 text-center">
+                Ediçao e pesquisa
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card py-3" style="height: 350px;">
+            <img src="./images/julia.jpeg" class="card-img-top rounded-pill m-auto" alt="..." style="object-fit: cover;">
+            <div class="card-boy px-2">
+              <h5 class="card-title text-center mt-2">
+                Júlia Alice da Silva M. Câmara
+              </h5>
+             <div class="card-text mb-3 text-center">
+                Ediçao e pesquisa
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-3">
+          <div class="card py-3" style="height: 350px;">
+            <img src="./images/joyci.jpeg" class="card-img-top rounded-pill m-auto" alt="..." style="object-fit: cover;">
+            <div class="card-boy px-2">
+              <h5 class="card-title text-center mt-2">
+                Joycilene Rodrigues Gomes
+              </h5>
+             <div class="card-text mb-3 text-center">
+                Ediçao e pesquisa
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card py-3" style="height: 350px;">
+            <img src="./images/laysa.jpeg" class="card-img-top rounded-pill m-auto" alt="..." style="object-fit: cover;">
+            <div class="card-boy px-2">
+              <h5 class="card-title text-center mt-2">
+                Laísa Lidiane Costa Almeida
+              </h5>
+             <div class="card-text mb-3 text-center">
+                Ediçao e pesquisa
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card py-3" style="height: 350px;">
+            <img src="./images/rayane.jpeg" class="card-img-top rounded-pill m-auto" alt="..." style="object-fit: cover;">
+            <div class="card-boy px-2">
+              <h5 class="card-title text-center mt-2">
+                Rayane Kelly de Sousa
+              </h5>
+             <div class="card-text mb-3 text-center">
+                Ediçao e pesquisa
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card py-3" style="height: 350px;">
+            <img src="./images/samyra.jpeg" class="card-img-top rounded-pill m-auto" alt="...">
+            <div class="card-boy px-2">
+              <h5 class="card-title text-center mt-2">
+                Samyra Fernandes Farias
+              </h5>
+             <div class="card-text mb-3 text-center">
+                Ediçao e pesquisa
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="row w-100 m-auto" style="background-color: #8e44ad;" id="educacao-sexual">
+  <div class="titulo text-center text-white">
+    <h1>Educação Sexual</h1>
+  </div>
+</div>
+
+
+<div class="container" >
+    <div class="row">
+      <div class="titulo my-4">
+        <h1>Importância da Educação Sexual</h1>
+      </div>
+      <div class="texto">
+        A educação sexual tem a função de promover a informação e a conscientização de assuntos relacionados a sexualidade, sexo, alto cuidado,alto segurança  e consentimento. Visando disseminar o assunto sem tabus, de forma clara e promovendo  o conhecimento do corpo de forma natural e segura e não relacionada ao ato sexual em si. O número crescente de abuso de vulnerável reforça a necessidade de informar os jovens sem preconceito e reforça que educação sexual é um caso de saúde pública. Muitas famílias defendem a idea de que não se deve abordar assuntos relacionados a sexo na infância, toda via a falta de diálogo só promove a vulnerabilidade. A escola entra como uma forte fonte de conhecimento seguro e sincero para com os jovens, tornando o ambiente confortável para que o jovem possa aprender sobre seu corpo. Esse conhecimento vai de aprender o nome correto das suas partes íntimas, higiene correta da região íntima, abraçar e entender como lidar com as mudanças relacionadas a pulberdade e menstruação, aprender os riscos que as IST's apresentam, as consequências de uma gravidez na adolescência e inesperada, conhecimento sobre os diversos tipos de métodos contraceptivos, como se preparar psicologicamente e fisicamente quando decidir iniciar a vida sexual. Educar sexualmente não é estímular a fazer sexo, trazer esse tipo de orientação é explicar sobre privacidade e autoproteção, para que o jovem escolha sua saúde acima de tudo. O ambiente escolar também deve explicar sobre o consentimento, ensinando a diferença entre o toque seguro e os não permitido vindo de um terceiro com péssimas intenções. Ensina a criança a dizer não, sobre como se proteger e procurar ajuda em situações de violação do seu corpo. Educação sexual é proteção, segurança e necessidade para futuros adultos sem violência sexual e com todo conhecimento necessário sobre seu corpo, sexualidade e questões de gênero.
+      </div>
+
+      <!-- <div class="titulo my-4">
+        <h1>Educação Sexual nas Escolas</h1>
+      </div>
+      <div class="texto">
+        texto texto
+      </div>
+      <div class="titulo my-4">
+        <h1>Educação Sexual na Adolescência</h1>
+      </div>
+      <div class="texto">
+        texto texto
+      </div> -->
+    </div>
+</div>
+
+
+<div class="mt-5"></div>
+
+<div class="row w-100 m-auto" style="background-color: #8e44ad;" id="puberdade">
+  <div class="titulo text-center text-white">
+    <h1>Pubebrdade</h1>
+  </div>
+</div>
+
+
+<div class="container" >
+
+  <div class="row">
+    <div class="titulo mt-3">
+      <h1>Vamos falar sobre Puberdade…</h1>
+    </div>
+
+    <div class="texto mt-3">
+      A adolescência é um conceito definido pela OMS (Organização mundial de saúde) que abrange pessoas entre 10 a 20 anos.</br></br>
+
+      Já a puberdade é um processo de transição entre a infância e a fase adulta, que pode ocorrer antes ou durante a adolescência. Neste período o seu corpo passa por várias alterações hormonais que desencadeiam mudanças físicas e emocionais. E geralmente se inicia entre 8 a 13 anos nas meninas, e de 9 a 14 anos nos meninos.
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <div class="titulo mt-5">
+        <h1>Mudanças Físicas nas Meninas:</h1>
+      </div>
+      <ul class="texto">
+        <li>Crescimento dos Seios.</li>
+        <li>Crescimento de pelos (As meninas desenvolvem pelos pubianos nas genitálias e axilas).</li>
+        <li>Curvas corporais.</li>
+        <li>Início da Menstruação (Menarca).</li>
+      </ul>
+      <div class="titulo mt-5">
+        <h1>Mudanças Físicas nos Meninos:</h1>
+      </div>
+      <ul class="texto">
+        <li>Crescimento acelerado.</li>
+        <li>Desenvolvimento dos órgãos genitais (Os testículos e o pênis aumentam de tamanho).</li>
+        <li>Aparência de pelos (Começam a crescer pelos na face, axilas e partes genitais).</li>
+        <li>Mudança na voz (A voz fica mais grave à medida que as cordas vocais se alongam e engrossam).</li>
+        <li>Aumento muscular (Ocorre o aumento da força física e massa muscular).</li>
+      </ul>
+    </div>
+    <div class="col-4">
+      <img src="./images/m.png" class="mt-3">
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="curiosidade">
+      <div class="conteudos">
+
+        <div class="titulo-cima">
+          CURIOSIDADE
+        </div>
+        <div class="img">
+          <img src="" alt="">
+        </div>
+      </div>
+
+      <div class="textos pb-4 pt-3 px-3">
+        <div class="titulo">
+          <h2>Você sabe o que é <span style="text-decoration: underline;">Estirão Puberal?</span></h2>
+        </div>
+        <div class="texto">
+          É uma fase de rápido crescimento do corpo que ocorre durante a puberdade. É responsável por, aproximadamente, 20% da altura da pessoa quando adulta, e pode durar cerca de 3 a 4 anos. Nas meninas pode correr entre 9 a 14 anos, e nos meninos de 11 a 16.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="titulo mt-5">
+      <h1>Curiosidades do corpo</h1>
+    </div>
+    <div class="texto">
+      Como foi falado anteriormente, o seu corpo está passando por alterações hotmail, então é comum que haja aumento de suor e oleosidade da pele, podendo causar odor e/ou acne. Para cuidar dessas questões é fundamental manter uma boa higiene pessoal e de forma regular, como tomar banho e lavar bem o seu corpo, principalmente as axilas e partes íntimas, lavar o rosto duas vezes ao dia e usar desodorante para controlar o odor corporal. Manter uma alimentação saudável e beber bastante água, pois nesta fase o seu corpo precisa de nutrientes adequados para sustentar o desenvolvimento e crescimento. Manter uma rotina de exercícios, pois praticar pelo menos 30 minutos de qualquer atividade física ajuda na regulação dos hormônios, aumenta a sensação de bem-estar e alivia o estresse.
+    </div>
+    <div class="titulo mt-5">
+      <h1>Como lidar com essa fase?</h1>
+    </div>
+    <div class="texto">Primeiro é importante entender que esta fase é super normal e natural, o seu corpo está passando por mudanças físicas, então é compreensível que haja algo novo e desconhecido. Respeite o seu ritmo, cada pessoa desenvolve-se em seu próprio ritmo durante a puberdade, por isso, não há motivos para comparações. Cada pessoa é única e isso é perfeitamente normal.
+    </div>
+  </div>
+</div>
+
+<div class="mt-5"></div>
+<div class="row w-100 m-auto" style="background-color: #8e44ad;" id="ist">
+  <div class="titulo text-center text-white">
+    <h1>Infecções Sexualmente Transmissíveis (ISt's)</h1>
+  </div>
+</div>
+
+<div class="container" >
+  <div class="row">
+    <div class="col-8">
+      <div class="titulo mt-5">
+        <h1>Curiosidade sobre IST's</h1>
+      </div>
+      <div class="texto">
+        Você já assistiu ao filme Filadélfia? Ele retrata a história de um advogado que é demitido devido a sua condição de soropositivo, sua luta contra à descriminação e o preconceito. Filadélfia foi um dos primeiros filmes de Hollywood a abordar o tema do HIV/AIDS e a mostrar os desafios vividos por Andrew para lidar com o estigma e a descriminação associados a tal infecção, além de nos dar uma visão humana e sensível sobre o tema e nos impactar de forma significativa para uma maior conscientização sobre a doença.
+      </div>
+      <div class="text-center my-5">
+        <img src="./images/filadelfia.jpeg" alt="">
+      </div>
+    </div>
+    <div class="col-4">
+      <img src="./images/a12-removebg-preview.png" alt="">
+    </div>
+  </div>
+  <div class="row">
+    <div class="titulo">
+      <h1>Por que não usa-se mais a sigla DST's?</h1>
+    </div>
+
+    <div class="texto">
+      A terminologia DST's (Doenças sexualmente transmissíveis) foi substituída por IST's,  <span style="text-decoration: underline;"> Infecções Sexualmente Transmissíveis</span>, pois existem chances de que um indivíduo infectado possa transmitir para outra pessoa, mesmo não tendo apresentado sintomas. É importante saber que as IST's são transmitidas ou causadas, principalmente por meio de  <span style="text-decoration: underline;">relações sexuais desprotegidas</span>, e por compartilhamento de material sanguineo ou com secreções. Algumas IST 's são <span style="text-decoration: underline;">assintomáticas</span>. Suas manifestações mais comuns são aparecimentos de verrugas, bolhas ou feridas, não necessariamente nas partes íntimas. O <span style="text-decoration: underline;">diagnóstico precoce</span> proporciona qualidade de vida ao paciente e evita a transmissão para outras pessoas.
+    </div>
+
+
+    <div class="titulo mt-5">
+      <h1>Vamos falar um pouco mais?</h1>
+    </div>
+    <div class="texto">
+      Devemos tomar conhecimento sobre os principais aspectos das IST's, os sintomas, como elas afetam o organismo e o que podemos fazer para combater essas infecções e os estigmas associados aos portadores das mesmas.
+    </div>
+  </div>
+  <div class="row">
+    <div class="text-center">
+      <img src="./images/a11-removebg-preview.png" alt="">
+    </div>
+  </div>
+
+  <div class="curiosidade mt-5">
+    <div class="conteudos">
+      <div class="titulo-cima" style="margin-left: 20px;">
+       OBS.:
+      </div>
+    </div>
+
+    <div class="textos pb-4 pt-3 px-3">
+      <div class="texto text-center">
+        As seções de tratamentos a seguir são apenas para informar e ajudar no combate às IST's.</br>
+        Não se automediquem, prescrições médicas apenas com especialista.
+      </div>
+    </div>
+  </div>
+
+  <div class="titulo mt-5">
+    <h1>HIV e AIDS</h1>
+  </div>
+  <div class="container">
+  <div class="row py-2" style="border-bottom: 2px solid black">
+    <div class="col-4">
+      <div class="titulo text-center">
+        <h1>AGENTE</h1>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="texto">
+        Retrovírus: HIV-1, de predomínio mundial, e HIV-2, que provoca a maioria dos casos na África Ocidental. O HIV também pode ser referenciado pela sigla VIH (Vírus da Imunodeficiência Humana).
+      </div>
+    </div>
+  </div>
+  <div class="row py-2" style="border-bottom: 2px solid black">
+    <div class="col-4">
+      <div class="titulo text-center">
+        <h1>SINTOMAS</h1>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="texto">
+        Os primeiros sinais são parecidos com uma gripe, como febre e mal-estar. Passando para diarreia, suores noturnos e emagrecimento. Após isso, inicia-se o estágio da AIDS, que também pode ser chamada de SIDA (síndrome da imunodeficiência adquirida) com o enfraquecimento do organismo, podendo causar pneumonia, tuberculose, dentre outros.
+      </div>
+    </div>
+  </div>
+  <div class="row py-2" style="border-bottom: 2px solid black">
+    <div class="col-4">
+      <div class="titulo text-center">
+        <h1>TRANSMISSÃO</h1>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="texto">
+        Sexo desprotegido, via sanguínea, leite materno, objetos cortantes compartilhados.
+      </div>
+    </div>
+  </div>
+  <div class="row py-2" style="border-bottom: 2px solid black">
+    <div class="col-4">
+      <div class="titulo text-center">
+        <h1>DIAGNÓSTICO</h1>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="texto">
+        Coleta de sangue ou fluido oral, que são realizados de maneira gratuita pelo SUS.
+      </div>
+    </div>
+  </div>
+  <div class="row py-2" style="border-bottom: 2px solid black">
+    <div class="col-4">
+      <div class="titulo text-center">
+        <h1>TRATAMENTO</h1>
+      </div>
+    </div>
+    <div class="col-8">
+      <div class="texto">
+        Medicamentos antirretrovirais, que evitam a multiplicação do vírus. Todo o tratamento é disponibilizado de maneira gratuita pelo SUS.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row mt-5">
+  <div class="col-8">
+    <div class="titulo mb-3">
+      <h1>
+        Explicando melhor sobre o HIV...
+      </h1>
+    </div>
+    <div class="texto">
+      O vírus da imunodeficiência humana, mais conhecido pela sigla HIV. Esse VÍRUS no corpo humano é o causador da síndrome da imunodeficiência, ou seja, AIDS. A síndrome afeta de maneira muito severa o sistema imunológico, tornando o infectado muito mais suscetível a outras infecções mais graves e potencialmente mortais, tuberculose e pneumonia são as mais frequentes.</br>
+      Os sintomas iniciais são parecidos a de uma gripe comum(febre, diarreia, suores e mal-estar), após os primeiros sintomas, desenvolve-se a síndrome que enfraquece o sistema imunológico. O diagnóstico é feito através de coleta de sangue e fluido corporal de maneira gratuita pelo SUS, o tratamento também é disponibilizado de forma gratuita e é feito através de medicamentos que evitam a multiplicação do vírus.
+    </div>
+  </div>
+  <div class="col-4">
+    <img src="./images/a12-removebg-preview.png" alt="">
+  </div>
+</div>
+
+</div>
+
+<div class="mt-5"></div>
+<div class="row w-100 m-auto" style="background-color: #8e44ad;" id="relacao-sexual">
+  <div class="titulo text-center text-white">
+    <h1>Relação sexual</h1>
+  </div>
+</div>
+
+<div class="container" >
+  <div class="row">
+    <div class="titulo mt-3">
+      <h1>Por que pode ocorrer o sangramento na primeira relação?</h1>
+    </div>
+    <div class="texto">
+      Esse sangramento pode ocorrer devido ao rompimento de uma fina pelinha chamada “Hímen” que está localizada na entrada da vagina. O hímen varia em tamanho, espessura e elasticidade de uma mulher para outra, por isso o rompimento dessa pele pode ocorrer na primeira, segunda, terceira ou quarta relação, podendo até mesmo nunca se romper. E é super normal e natural! 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="text-center mt-3"><img src="./images/a1.PNG" alt=""></div>
+  </div>
+  <div class="titulo text-center my-3">
+    <h1 style="color:pink; text-decoration: underline;">Curiosidade</h1>
+  </div>
+
+  <div class="texto">
+    Você sabia que algumas mulheres podem não ter o hímen formado? Pois é! Algumas mulheres não possuem a formação completa do hímen e isto está relacionado a fatores naturais no desenvolvimento do corpo humano. Então é importante lembrar que a presença ou ausência do hímen não está relacionada à virgindade ou moralidade de uma pessoa. O hímen é apenas uma parte do corpo que pode variar de mulher para mulher.
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-4">
+      <div class="titulo mb-4">
+        <h1>
+          Como lidar com o desconforto?
+        </h1>
+      </div>
+      <div class="texto">
+        Nesse momento é natural que haja um certo desconforto, mas para que isso seja amenizado é importante que você tenha uma comunicação aberta com o seu/sua parceiro(a) para expressar seus sentimentos e necessidades, encontrar um ambiente seguro, confortável e tranquilo também pode ajudar a reduzir o desconforto e ansiedade. Lembre-se que a primeira vez(relação sexual) só deve ocorrer se os dois estiverem se sentindo tranquilos e seguros. Consentimento e confiança são importantes!
+      </div>
+    </div>
+    <div class="col-8">
+      <img src="./images/a2.PNG" class="mt-5" alt="" width="600px" height="300px">
+    </div>
+  </div>
+
+  <div class="titulo mt-3">
+    <h1>O que é Orgasmo?</h1>
+  </div>
+
+  <div class="texto">
+    O orgasmo é uma excitação gerada por uma atividade sexual a sós ou com parceiro(a), e gera um prazer físico e emocional/mental intenso. Sua ocorrência gera diversas sensações prazerosas, como contrações dos órgãos genitais (Tanto no homem quanto na mulher), volicações involuntárias e aumento da frequência cardíaca. 
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <div class="titulo mt-5">
+        <h1>Mas como isso funciona no nosso corpo?</h1>
+      </div>
+    
+      <div class="texto">
+        Durante o orgasmo, os músculos pélvicos se contraem, a respiração, frequência cardíaca e pressão arterial aumentam, e há a liberação de vários hormônios, como ocitocina, adrenalina, endorfina e serotonina, em corpos ovarianos. Junto a isso, há uma sensação mental de intenso prazer, satisfação e conexão emocional.
+      </div>
+    </div>
+    <div class="col-4">
+      <img src="./images/a3.PNG" alt="">
+    </div>
+  </div>
+  <div class="row">
+      <div class="curiosidade">
+        <div class="conteudos">
+          <div class="titulo-cima" style="margin-left: 20px;">
+            CURIOSIDADE
+          </div>
+        </div>
+  
+        <div class="textos text-center pb-4 pt-3 px-3">
+          <div class="texto">
+            Durante o orgasmo algumas pessoas (casos raros) podem passar pela experiência de petite mort (pequena morte), que é basicamente a perda da consciência por breve instantes. Embora seja uma situação curiosa para quem experimenta ou testemunha, geralmente não é um caso considerado grave ou prejudicial à saúde.
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="texto mt-5 text-center">
+    No entanto, é sempre bom buscar orientação médica em episódios de perda de consciência, para que ele avalie a situação e aconselhe de forma adequada com base no quadro específico.
+  </div>
+
+  <div class="row my-5">
+    <div class="titulo">
+      <h1>
+        E a ejaculação o que é?
+      </h1>
+    </div>
+    <div class="texto">
+      É a liberação de fluidos sexuais e ocorre como resposta a vários tipos de estímulos como, na estimulação sexual, no ato sexual, na masturbação ou, até mesmo apenas com a imaginação. Esse processo é acompanhado por uma sensação muito prazerosa e intensa, representando o clímax do orgasmo, podendo ser muito agradável e satisfatório.
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-4">
+        <div class="titulo mt-3">
+          <h1>Ejaculação para as pessoas com pênis</h1>
+        </div>
+
+        <div class="texto">
+          É o momento em que o corpo libera sêmen através do pênis após a estimulação sexual. 
+        </div>
+    </div>
+    <div class="col-8">
+      <div class="curiosidade">
+        <div class="conteudos">
+  
+          <div class="titulo-cima" style="margin-left: 20px;">
+            CURIOSIDADE
+          </div>
+          <div class="img">
+            <img src="" alt="">
+          </div>
+        </div>
+  
+        <div class="textos pb-4 pt-3 px-3">
+          <div class="titulo">
+            <h2>Você sabe o que é Polução noturna?</h2>
+          </div>
+          <div class="texto">
+            São episódios de excitação durante o sono e que podem resultar na ejaculação e lubrificação. Também pode ser conhecida como “sonho molhado” ou “ejaculação noturna”.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-5"></div>
+<div class="row w-100 m-auto" style="background-color: #8e44ad;" id="contraceptivos">
+  <div class="titulo text-center text-white">
+    <h1>Contraceptivos</h1>
+  </div>
+</div>
+
+
+<div class="container" >
+  <div class="row">
+    <div class="texto mt-5">
+      Atualmente, existem diversos métodos contraceptivos disponíveis para evitar uma gravidez indesejada e até mesmo infecções sexualmente transmissíveis (IST). Cada método contraceptivo apresenta uma eficiência, e pode-se perceber que alguns apresentam um índice de falha considerável quando comparados a outros. Entretanto, é importante salientar que o método considerado mais eficiente nem sempre é o melhor para os envolvidos.
+      Os métodos contraceptivos podem ser classificados como reversíveis e irreversíveis. Tais métodos visam o controle de evitar gravidez indesejada, e não necessariamente previnem IST's.
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <div class="titulo mt-3">
+        <h1>
+          MÉTODOS IRREVERSÍVEIS
+        </h1>
+      </div>
+      <div class="texto">
+        Os métodos contraceptivos definitivos consistem na esterilização permanente e pode ser realizado tanto nos homens quanto nas mulheres, impedindo assim, que os espermatozoides cheguem ao óvulo.
+      </div>
+
+      <div class="titulo mt-3">
+        <h1>
+          Laqueadura
+        </h1>
+      </div>
+      <div class="texto">
+        É a esterilização nas mulheres, que consiste na ligadura das trompas de Falópio. É realizado um procedimento cirúrgico em que o médico utiliza um instrumento que bloqueia a passagem do espermatozoide até o óvulo. Em alguns casos é removido um pedaço da trompa.
+      </div>
+
+      <div class="titulo mt-3">
+        <h1>
+          Vasectomia
+        </h1>
+      </div>
+
+      <div class="texto">
+        A vasectomia é a esterilização realizada no homem. Ela consiste no bloqueio dos ductos deferentes, responsáveis pelo transporte do esperma para outras glândulas, de modo que o sêmen não tenha mais espermatozoides. A partir desse procedimento, considera-se que o organismo demora 3 meses para se livrar de todo espermatozoide
+      </div>
+
+    </div>
+    <div class="col-4">
+      <img src="./images/aaa-removebg-preview.png" alt="" srcset="" style="margin-left: -50px;">
+    </div>
+  </div>
+
+  <div class="curiosidade mt-5">
+    <div class="conteudos">
+      <div class="titulo-cima" style="margin-left: 20px;">
+       OBS.:
+      </div>
+    </div>
+
+    <div class="textos pb-4 pt-2 px-3">
+      <div class="texto text-center">
+        Por envolver um procedimento cirúrgico, não é indicada para pessoas que desejam ter filhos no futuro.
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+      <div class="titulo mt-5">
+        <h1>Metodos irreversiveis</h1>
+      </div>
+      
+      <div class="texto my-3">
+        Métodos que, após a interrupção do uso, a fertilidade é retomada.
+      </div>
+      <ul>
+        <li class="texto">Preservativo masculino/camisinha masculina (Material feito de látex que recobre o pênis durante a relação sexual, impedindo que o sêmen entre em contato com o sistema genital feminino).</li>
+        <li class="texto">Preservativo feminino/ camisinha feminina (Material feito de poliuretano que é inserido no interior da vagina antes da relação sexual. Impede o contato do pênis com a vagina, retendo o esperma).</li>
+      </ul>
+
+      <div class="titulo">
+        <h3>Obs: Além de proteger contra a gravidez, garante proteção contra DSTs.</h3>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-8">
+      <div class="titulo mt-3">
+        <h3>Os erros mais comuns cometidos na utilização da camisinha interna e externa são:</h3>
+      </div>
+
+      <ul>
+        <li class="texto">Guardar em local incorreto - ela deve ser mantida em local fresco e seco</li>
+        <li class="texto">Abrir com os dentes ou objetos cortantes - pode danificá-la</li>
+        <li class="texto">Usar só na hora da penetração - ela deve ser utilizada durante o sexo oral, genital ou anal</li>
+        <li class="texto">Usar só na hora da ejaculação - a gravidez e a transmissão de IST's podem acontecer antes</li>
+        <li class="texto">Colocar do avesso e não tirar o ar do reservatório ao colocar a camisinha - pode romper o material</li>
+        <li class="texto">Usar lubrificantes que não sejam à base d'água - podem rachar o material</li>
+        <li class="texto">Usar duas vezes a mesma camisinha - o reuso não previne IST's e gravidez</li>
+        <li class="texto">Não tirar o preservativo com o pênis ereto - o sêmen pode vazar e entrar em contato com a mucosa genital</li>
+      </ul>
+    </div>
+    <div class="col-4">
+      <img src="./images/rr-removebg-preview.png" alt="" style="margin-top: -80px;" height="350px" width="400">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="titulo mt-3">
+      <h1>Diafragma</h1>
+    </div>
+    <div class="texto">
+      Esse método consiste em um anel flexível com uma membrana de látex ou silicone recobrindo a estrutura, formando uma espécie de cúpula. Ele é colocado na vagina para cobrir o colo do útero, o que impede a passagem de espermatozoides.
+    </div>
+
+    <div class="titulo mt-4">
+      <h4>Obs: É necessário a consulta com especialista para receber as devidas orientações sobre o uso, cuidados e conservação. Pode prevenir algumas IST's, como clamídia, tricomoníase, doença inflamatória pélvica e câncer do colo de útero. Mas não contra o HIV.</h4>
+    </div>
+    
+    <div class="titulo mt-3">
+      <h1>Espermicida</h1>
+    </div>
+    <div class="texto">
+      Substâncias químicas que são introduzidas na vagina e formam uma espécie de barreira para os espermatozoides.
+    </div>
+    <div class="titulo mt-4">
+      <h4>
+        Obs: Sua eficácia aumenta se utilizado com camisinha ou diafragma, adicionando o espermicida dentro destes materiais. Até o momento, esse método não demonstrou eficácia contra o IST's.
+      </h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <div class="titulo mt-3">
+        <h1>Dispositivos intrauterinos</h1>
+      </div>
+      <div class="texto">
+        DIU: Método anticoncepcional que consiste em um dispositivo em formato de T que é colocado no interior do útero pelo ginecologista. Objeto pequeno de plástico, que por vezes, é envolvido por um fio muito fino, que pode ser de cobre, prata ou hormonal. Os dois primeiros não liberam hormônios, tendo menos efeitos. Objetiva gerar uma reação no nível da mucosa uterina, o endométrio, como forma de impedir a implantação do óvulo fecundado.
+      </div>
+
+      <div class="titulo">
+        <h4>
+          Obs: Após retirado, a fertilidade retorna ao normal. Esse método não protege contra IST's.</h4>
+      </div>
+    </div>
+    <div class="col-4">
+      <img src="./images/nn-removebg-preview.png" class="mt-4" alt="" srcset="">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="titulo">
+      <h1>Pílulas anticoncepcionais</h1>
+    </div>
+    <div class="texto">
+      são feitas com hormônios semelhantes aos que são produzidos pelo próprio corpo (estrogênio e progesterona). Elas atuam impedindo a ovulação e dificultando a passagem dos espermatozóides para o interior do útero.
+      Elas possuem uma eficácia de 99,8% quando utilizados de forma correta e regular, ou seja, é recomendado que seja tomada uma pílula por dia sempre no mesmo horário.
+    </div>
+    <div class="titulo">
+      <h4>Obs: É um método contraceptivo muito seguro, utilizado de maneira contínua e pontual, mas não protege contra IST'S.
+      </h4>
+    </div>
+    <div class="titulo mt-3">
+      <h1>Anticoncepcionais injetáveis</h1>
+    </div>
+    <div class="texto">
+      Assim como as pílulas, contêm hormônios similares aos que são produzidos no corpo da mulher. Existem diferentes tipos de anticoncepcionais injetáveis, sendo alguns aplicados mensalmente, e outros, a cada três meses. O mecanismo de ação baseia-se no impedimento da ovulação.
+    </div>
+    <div class="titulo">
+      <h4>
+        OBS: O retorno da fertilidade, após encerramento do uso, pode demorar até 1 ano. Não previne IST's.
+      </h4>
+    </div>
+
+
+    <div class="titulo mt-3">
+      <h1>Anticoncepcional oral de emergência</h1>
+    </div>
+    <div class="texto">
+      A pílula anticoncepcional de emergência só deve ser usada excepcionalmente e nunca deve ser adotada como método contraceptivo usual. O uso frequente da pílula do dia seguinte pode causar alterações no ciclo menstrual. Esse método consiste de um ou dois comprimidos com grande quantidade de hormônio (levonorgestrel), que evitam a ovulação e criam um ambiente hostil aos espermatozoides. Vale lembrar que, quanto antes os comprimidos forem tomados, maiores são as chances de prevenir a gravidez.
+    </div>
+    <div class="titulo">
+      <h4>
+        Obs: Não protege contra DST's
+      </h4>
+    </div>
+
+
+    <div class="titulo mt-3">
+      <h1>Importante</h1>
+    </div>
+    <div class="texto">
+      Vale ressaltar que, alguns métodos, como o da tabelinha ou do muco cervical, não são recomendados, tanto no aspecto de eficácia, quanto de proteção contra IST 's. Esses métodos se baseiam em alguns parâmetros, como o período fértil e a presença de muco vaginal, para indicar quando evitar relaçõessexuais. Não é eficaz pois desconsidera muitas variáveis importantes, como fluxos menstruais irregulares, além de não proteger contra IST 'S.
+    </div>
+  </div>
+</div>
+
+<div class="mt-5"></div>
+<div class="row w-100 m-auto" style="background-color: #8e44ad;" id="outras-informacoes">
+  <div class="titulo text-center text-white">
+    <h1>Outras informações</h1>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="accordion" id="accordionExample">
+    <div class="card my-3">
+      <div class="card-header" id="headingOne" style="background-color: #ffb8b8;">
+        <h5 class="mb-0">
+          <a class="btn text-dark" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+              <div class="titulo">
+                <h1>
+                  Meu corpo é normal?
+                </h1>
+              </div>
+            </div>
+            </a>
+        </h5>
+      </div>
+      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+        <div class="card-body">
+          Passar pela puberdade, faz parecer que o seu corpo é desarmônico por causa do estirão puberal. Além disso, as mídias impõem  uma visão sexualizada de corpos “perfeitos”, que na maioria das vezes não correspondem a corpos reais. Diversas características que não condizem com o padrão imposto, como pênis torto, estrias e seios desproporcionais são comuns e não devem ser motivo de vergonha.
+        </div>
+      </div>
+    </div>
+
+    <div class="card my-3">
+      <div class="card-header" id="headingTwo" style="background-color: #ff4d4d;">
+        <h5 class="mb-0">
+          <a class="btn text-dark" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+              <div class="titulo">
+                <h1>
+                  O QUE É ESTIRÃO PUBERAL?
+                </h1>
+              </div>
+            </div>
+            </a>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          É a fase da puberdade em que o seu corpo cresce de forma rápida. Sendo responsável por  20% da sua altura quando estiver adulto, e pode durar cerca de 3 a 4 anos.
+        </div>
+      </div>
+    </div>
+
+    <div class="card my-3">
+      <div class="card-header" id="headingTree" style="background-color: #c56cf0;">
+        <h5 class="mb-0">
+          <a class="btn text-dark" type="button" data-toggle="collapse" data-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+              <div class="titulo">
+                <h1>
+                  COMO O NOSSO CORPO REAGE A PRIMEIRA VEZ?
+                </h1>
+              </div>
+            </div>
+            </a>
+        </h5>
+      </div>
+      <div id="collapseTree" class="collapse" aria-labelledby="headingTree" data-parent="#accordionExample">
+        <div class="card-body">
+          Não há mudanças físicas no corpo, mas pode haver novos sentimentos. Na primeira vez pode haver um pequeno desconforto, não devido a penetração, e sim por causa do nervosismo que pode diminuir a lubrificação e contração dos músculos da vagina.Por isso é importante escolher um parceiro(a) de confiança, conversar sobre os gostos de cada um e respeitar os limites. 
+        </div>
+      </div>
+    </div>
+    <div class="card my-3">
+      <div class="card-header" id="headingFour" style="background-color: #3ae374;">
+        <h5 class="mb-0">
+          <a class="btn text-dark" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+              <div class="titulo">
+                <h1>
+                  PUBERDADE E ADOLESCENCIA SÃO A MESMA COISA?
+                </h1>
+              </div>
+            </div>
+            </a>
+        </h5>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+        <div class="card-body">
+          Não, puberdade é a fase pelo qual o seu corpo está em transição da infância para fase adulta. Já a adolescência é um termo usado pela OMS para abranger pessoas de 10 a 20 anos que estão passando pela fase de desenvolvimento.
+        </div>
+      </div>
+    </div>
+    <div class="card my-3">
+      <div class="card-header" id="headingFive" style="background-color: #7d5fff;">
+        <h5 class="mb-0">
+          <a class="btn text-dark" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+              <div class="titulo">
+                <h1>
+                  COMO EU POSSO SABER SE ESTOU NA PUBERDADE?
+                </h1>
+              </div>
+            </div>
+            </a>
+        </h5>
+      </div>
+      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+        <div class="card-body">
+          Para as meninas, o crescimento dos seios e principalmente a vinda da primeira menstruação (menarca) são sinais que caracterizam a puberdade. Já os meninos, há o crescimento dos órgãos genitais, aparecimentos de pelos pubianos  e mudanças na voz.
+        </div>
+      </div>
+    </div>
+
+    <div class="card my-3">
+      <div class="card-header" id="headingSix" style="background-color: #fff200;">
+        <h5 class="mb-0">
+          <a class="btn text-dark" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+              <div class="titulo">
+                <h1>
+                  QUANDO QUE ESTOU PRONTO PARA INICIAR MINHA VIDA SEXUAL?
+                </h1>
+              </div>
+            </div>
+            </a>
+        </h5>
+      </div>
+      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+        <div class="card-body">
+          Não há idade ideal, mas é importante que você tenha uma boa maturação emocional e motivação para o sexo (que não seja algo forçado ou apressado só porque os seus amigos talvez já tenham inicado essa fase). Transar pela primeira deve ser uma decisão sua e seu parceiro, e é importante que exista um relacionamento com diálogo, confiança crescente  e afeto. É normal sentir medo pelas expectativas criadas e isso pode ser resolvido com uma conversa com alguém de confiança que já tenha experiência. 
+        </div>
+      </div>
+    </div>
+    <div class="card my-3">
+      <div class="card-header" id="headingSeven" style="background-color: #17c0eb;">
+        <h5 class="mb-0">
+          <a class="btn text-dark" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+              <div class="titulo">
+                <h1>
+                  O QUE É CONSENTIMENTO?
+                </h1>
+              </div>
+            </div>
+            </a>
+        </h5>
+      </div>
+      <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+        <div class="card-body">
+          O conceito de consentimento é aceitar, permitir. É um ato baseado na compreensão das nossas necessidades e respeito do nosso corpo e vontades, e saber que também devemos entender e respeitar o direito do outro sobre o próprio corpo e vontades. 
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+
+
+
+<footer  class="text-center text-lg-start bg-light text-muted">
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+  </div>
+</footer>
+<script src="js/index.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+</body>
+</html>
