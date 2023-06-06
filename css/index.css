@@ -35,6 +35,11 @@ font-family: 'Pangolin', cursive; */
   margin-left: 10%;
 }
 
+.texto {
+  font-size: 1.2em;
+  text-align: justify;
+}
+
 .textos h1{
   color: #fff;
   font-family: 'Lilita One', cursive;
