@@ -22,6 +22,25 @@ $(document).ready(function () {
       );
     }
   });
+
+  function writer(element) {
+    const textArray = element.innerHTML.split("");
+    element.innerHTML = "";
+    textArray.forEach((letra, i) => {
+      setTimeout(function () {
+        element.innerHTML += letra;
+        if (textArray.length - 1 == i) {
+          setTimeout(() => {
+            writer(element);
+          }, 5000);
+        }
+      }, 90 * i);
+    });
+  }
+
+  let elemento = document.querySelector(".titulo-content");
+
+  writer(elemento);
 });
 
 $(window).on("scroll", function () {

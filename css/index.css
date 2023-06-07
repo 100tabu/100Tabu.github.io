@@ -53,6 +53,22 @@ font-family: 'Pangolin', cursive; */
   width: 60%;
 }
 
+.titulo-content::after{
+  content: '|';
+  margin-left: 2px;
+  opacity: 1;
+  animation: pisca .7s ease-in infinite;
+}
+
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 /* imagens */
 @media (max-width: 480px) {
   #carrossel {
